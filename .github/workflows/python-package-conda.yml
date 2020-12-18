@@ -20,3 +20,8 @@ jobs:
     - name: build with pyinstaller
       run: |
         pyinstaller main.py
+    - name: Create executable
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "D:/a/python-pyinstaller/python-pyinstaller/build/main/*.exe"
+        token: ${{ secrets.TOKEN }}    
