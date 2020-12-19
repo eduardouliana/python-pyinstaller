@@ -19,7 +19,7 @@ jobs:
         pip install pyinstaller
     - name: build with pyinstaller
       run: |
-        pyinstaller main.py
+        pyinstaller -F main.py
     - name: Create executable
       uses: ncipollo/release-action@v1
       with:
